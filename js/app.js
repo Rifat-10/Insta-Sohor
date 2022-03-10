@@ -152,11 +152,13 @@ const displayLikedPosts = () => {
   });
 };
 const displayReportedPosts = () => {
-    const reportedPosts = getReportedPosts();
-    reportedPosts.forEach((post) => {
-        const div = createPost(post);
-        document.getElementById( "reported" ).appendChild(div);
-    });
+  const reportedPosts = getReportedPosts();
+  const reported = document.getElementById("reported")
+  reported.innerHTML = "<h1>Reported posts</h1>"
+  reportedPosts.forEach((post) => {
+    const div = createPost(post);
+    reported.appendChild(div);
+  });
 };
 
 const loadPosts = async () =>{
