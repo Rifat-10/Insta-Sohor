@@ -19,6 +19,11 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Bootstrap Stylesheet -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -49,7 +54,7 @@
     </header>
     <main class="main container mx-auto p-3">
         <div id="posts">
-            
+
         </div>
         <div id="liked">
             <h1>Liked posts</h1>
@@ -60,11 +65,102 @@
         </div>
     </main>
 
-   
+
+
+    <section class="container mt-5 ms-5 pt-5 mb-4 me-5 justify-content-center align-items-center ">
+        <!-- Heading of this Section -->
+        <div class="w-100 text-center py-3">
+            <h1 class="mx-auto fw-bolder mb-4 fs-1"> <span class="text-danger">S</span>ome <span
+                    class="text-danger">Q</span>uestions <span class="text-danger">A</span>nswer</h1>
+        </div>
+
+
+
+        <!-- Accordion -->
+        <div class=" accordion accordion-flush mx-sm-auto" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <p class="pe-2 fs-3"> How does Javascript Work ? </p>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Ans: JS is a programming language that only allows one task or line of code to be executed at a
+                        time. It's a well-defined programming language <br> that employs dynamic typing and, like most
+                        scripting languages, performs type security checks during execution. JavaScript is a programming
+                        language <br> for the client side that is one of the most efficient and widely used scripting
+                        languages. The client-side scripting language refers to the fact that it runs on the
+                        client's side of the web browser nevertheless, the client's web browser must support or enable,
+                        JavaScript as well. Most current web browsers that have a JavaScript engine now support JavaScript.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <p class="pe-2 fs-3">What does Javascript even-loop do?</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse " aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Ans:JavaScript's runtime architecture is based on an event loop, which runs the code, collects
+                        and processes events, and runs queued sub-tasks.
+
+                        At some point during the event loop, the runtime starts treating the messages on the queue,
+                        starting with the oldest. To do so, the message is removed from the queue and the relevant
+                        function is called, with the message as an input parameter. Calling a function, as it always
+                        does, creates a new stack frame for that function's use.
+
+                        The functions are executed until the stack is once again empty. The event loop will then move on
+                        to the next message in the queue to process.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <p class="pe-2 fs-3">
+                            What’s the difference between Local Storage and Session Storage?
+                        </p>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Ans: The difference between Local Storage and Session Storage are given below: <br>
+
+                        The store is persistent across browser sessions with <span class="fw-bold">localStorage</span>. <br>
+                        When the page session expires, <span class="fw-bold">Session Storage</span> is cleared. <br>
+                        <span class="fw-bold">local Storage</span> has a storage capacity of 5MB/10MB. <br>
+                        <span class="fw-bold">Session Storage</span> has a 5MB storage capacity. <br>
+                        Expiration of <span class="fw-bold">localStorage</span> is Never. <br>
+                        On tab closing,<span class="fw-bold">Session Storage</span> expires. <br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
     <footer></footer>
 
     <!-- add javascript  file  -->
     <script src="./js/app.js"></script>
+
+    <!-- Bootstrap Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 </body>
 
